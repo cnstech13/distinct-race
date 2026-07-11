@@ -1,0 +1,422 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+}
+
+.nav-bar{
+    height: 70px;
+    background: orange;
+    
+    
+    
+}
+
+.brand{
+    float: left;
+    position: relative;
+    padding-top:2px;
+    padding-left: 20px;
+    line-height: 70px;
+    font-size: 1.5em;
+}
+
+.brand a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #262626;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background: #2ab1ce;
+    color: #fff;
+}
+
+nav ul li a:not(:only-child):after{
+    content: '▼';
+    padding-left: 5px;
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a{
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown{
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.nav-mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+}
+
+#nav-toggle{
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 15px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span::before,
+#nav-toggle span::after{
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+    height: 5px;
+    width: 35px;
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span::before{
+    top: -10px;
+}
+
+#nav-toggle span::after{
+    bottom: -10px;
+}
+
+#nav-toggle.active span{
+    background-color: transparent;
+}
+
+#nav-toggle.active span::before, #nav-toggle.active span::after{
+    top: 0;
+}
+
+#nav-toggle.active span::before{
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span::after{
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-mobile{
+        display: block;
+    }
+
+    nav{
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a{
+        padding: 15px;
+        line-height: 20px;
+        padding-left: 25%;
+    }
+
+
+    nav ul li ul li a{
+        padding-left: 30%;
+    }
+
+    .nav-dropdown{
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px){
+    .nav-list{
+        display: block !important;
+    }
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        display:block;
+    }
+
+body{
+    padding:0;
+    margin:0;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    display:block;
+}
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin:0 15px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+}
+
+
+ .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#0d47a1;
+        text-align:center;
+        padding:20px 0;
+   }     
+.btn,.btn-nav{
+    background:orange;
+    pisition:relative;
+    color:#fff;
+    padding:20px;
+    border-radius:30px;
+    text-decoration:none;
+    top:30px;
+}
+.btn1{
+    position: relative;
+    top: 30px;
+    background:orange;
+    border-radius:30px;
+    padding: 20px 30px;
+    text-decoration:none;
+}
+.btn2{
+    position: relative;
+    top: 30px;
+    background:orange;
+    border-radius:30px;
+    padding: 20px 30px;
+    text-decoration:none;
+}
+
+/* Hero */
+.hero{
+    
+    min-height: 100vh;
+    background:url('identity.jpg') center center/cover no-repeat;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:5px;
+    object-fit: cover;
+    background-position:center top;
+    width:100%;
+    display:flex;
+    padding-top:0px;
+    
+    text-align:center;
+    color:purple;
+    margin-top:0px;
+    
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-top: 300px;
+}
+
+.hero p{
+    margin:30px;
+    max-width:600px;
+}
+
+/* Sections */
+section{
+    padding:50px 1%;
+    
+}
+
+.container,
+.cards,
+.program-grid,
+.counter-container,
+.testimonial-container,
+.footer-content{
+    display:grid;
+    gap:20px;
+    text-decoration:none;
+}
+
+.container{
+    grid-template-columns:1fr 1fr;
+}
+
+.cards,
+.program-grid,
+.counter-container,
+.testimonial-container,
+.footer-content{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.card,
+.program,
+.counter-box,
+.testimonial{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    text-decoration:none;
+}
+
+.card i,
+.program i{
+    font-size:40px;
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+
+/* Contact */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:purple;
+    color:#fff;
+    padding:40px 8%;
+}
+
+footer a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.social a{
+    font-size:22px;
+    margin-right:10px;
+}
+
+hr{
+    margin:20px 0;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.container{
+    grid-template-columns:1fr;
+}
+
+.nav-links{
+    display:none;
+}
+
+.hero h1{
+    font-size:2rem;
+    top: 20%;
+    
+}
+
+
+
+.logo img{
+    width:70px;
+    height:auto;
+}
+
+.purpose{
+    margin-top:0px;
+    position: relative;
+    padding-top:0px;
+    top: 300px;
+    left: 5%;
+    width: 50%;
+    max-width: 180px;
+    min-width: 40px;
+    height: auto;
+    border-radius: 5px;
+}
+.hero-content{
+    position: relative;
+    padding-top:0px;
+    margin-top:0px;
+    
+    
+}
