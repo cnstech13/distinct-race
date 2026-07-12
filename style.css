@@ -426,9 +426,9 @@ h1{
 }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     .purpose {
-        margin-top: 90%; /* Move it down on desktop */
-        width:25%;
+        margin-top: 100%; /* Move it down on desktop */
+        width:40%;
     }
 }
