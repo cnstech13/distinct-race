@@ -425,3 +425,9 @@ h1{
        
 }
 }
+
+@media (min-width: 992px) {
+    .purpose {
+        margin-top: 120px; /* Move it down on desktop */
+    }
+}
