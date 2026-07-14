@@ -28,7 +28,7 @@
     padding-left: 0px;
     line-height: 70px;
     font-size: 1.5em;
-    z-index:2;
+    
 }
 
 .brand a{
@@ -406,7 +406,7 @@ h1{
 
 .hero h1{
     font-size:2rem;
-    top: 20%;
+    top: 5%;
     
 }
 
@@ -421,18 +421,18 @@ h1{
     display:flex;
     flex-wrap:wrap;
     margin-top:5px;
-    position: relative;
+    position: absolute;
     
-    top: 10%;
+    top: 0%;
     left: 72%;
     width: 13%;
     max-width: 40%;
     min-width: 30px;
-    height: 60%;
+    height: 7%;
     border-radius: 5px;
 }
 .hero-content{
-    position: relative;
+    position: absolute;
     padding-top:0px;
     margin-top:0px;
        
